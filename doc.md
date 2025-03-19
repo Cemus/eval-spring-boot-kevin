@@ -1,19 +1,19 @@
 ## Documentation de l'API
 ## Sommaire
 
-* [Endpoints Produits](#endpoints-produits-)
-  * [Ajouter un produit](#ajouter-un-unproduit-)
-  * [Récupérer tous les produits](#récupérer-tous-les-produits-)
-  * [Récupérer un produit par son ID](#récupérer-un-produit-par-son-id-)
-* [Endpoints Categories](#endpoints-categories-)
-  * [Ajouter une catégorie](#ajouter-une-catégorie-)
-  * [Récupérer toutes les catégories](#récupérer-toutes-les-catégories-)
-  * [Récupérer une catégorie par son ID](#récupérer-une-catégorie-par-son-id-)
-* [Format de données attendu](#format-de-données-attendu-)
-* [Gestion des erreurs](#gestion-des-erreurs-)
-  * [Ressource non trouvée](#ressource-non-trouvée-)
-  * [Conflit lors de l'ajout](#conflit-lors-de-lajout-)
-  * [Erreur de format de requête](#erreur-de-format-de-requête-)
+* [Endpoints Produits](#endpoints-produits)
+  * [Ajouter un produit](#ajouter-un-unproduit)
+  * [Récupérer tous les produits](#récupérer-tous-les-produits)
+  * [Récupérer un produit par son ID](#récupérer-un-produit-par-son-id)
+* [Endpoints Categories](#endpoints-categories)
+  * [Ajouter une catégorie](#ajouter-une-catégorie)
+  * [Récupérer toutes les catégories](#récupérer-toutes-les-catégories)
+  * [Récupérer une catégorie par son ID](#récupérer-une-catégorie-par-son-id)
+* [Format de données attendu](#format-de-données-attendu)
+* [Gestion des erreurs](#gestion-des-erreurs)
+  * [Ressource non trouvée](#ressource-non-trouvée)
+  * [Conflit lors de l'ajout](#conflit-lors-de-lajout)
+  * [Erreur de format de requête](#erreur-de-format-de-requête)
 ---
 
 
