@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProduitRepository extends CrudRepository<Produit, Integer> {
-    public Produit findByNom(String nom);
+     Produit findByNom(String nom);
 }
