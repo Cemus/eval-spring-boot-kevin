@@ -75,7 +75,7 @@
 ### Produits
 **nom** : Le nom du produit.  
 * Ne peut pas être vide 
-* Taille comprise entre 3 et 50 caractères inclus.
+* Taille comprise entre 3 et 50 caractères inclus
 
 **prix** : Le prix du produit. 
 * Ne peut pas être nul
@@ -84,7 +84,7 @@
 ### Catégories
 **libele** : Le nom de la catégorie. 
 * Ne peut pas être vide
-* Taille comprise entre 2 et 50 caractères inclus.
+* Taille comprise entre 2 et 50 caractères inclus
 
 ---
 
