@@ -3,6 +3,7 @@ package com.kevin.evalspring.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,7 +22,7 @@ public class Produit {
     @Column(name="nom", length = 50, unique = true, nullable = false)
     private String nom;
 
-    @NotBlank(message = "Le prix ne doit pas être vide")
+    @NotNull(message = "Le prix ne doit pas être nul")
     @DecimalMin(value="0", inclusive = false, message="Le prix doit être supérieur à zéro")
     @Column(name="prix", nullable = false)
     private double prix;
