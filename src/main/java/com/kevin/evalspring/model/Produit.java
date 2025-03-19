@@ -26,15 +26,20 @@ public class Produit {
     @Column(name="prix", nullable = false)
     private double prix;
 
+    @ManyToOne
+    @JoinColumn(name="id_categorie")
+    private Categorie categorie;
+
     public Produit() {}
 
-    public Produit(String nom, double prix) {
+    public Produit(String nom, double prix, Categorie categorie) {
         this.nom = nom;
         this.prix = prix;
+        this.categorie = categorie;
     }
 
     @Override
     public String toString() {
-        return "Produit{" + "id=" + id + ", nom=" + nom + ", prix=" + prix + '}';
+        return "Produit{" + "id=" + id + ", nom=" + nom + ", prix=" + prix + ", categorie=" + categorie + '}';
     }
 }
