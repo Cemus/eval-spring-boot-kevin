@@ -1,30 +1,30 @@
 ## Documentation de l'API
 ## Sommaire
 
-* [Endpoints Produits](#endpoints-produits-)
-  * [Ajouter un produit](#ajouter-un-unproduit-)
-  * [Récupérer tous les produits](#récupérer-tous-les-produits-)
-  * [Récupérer un produit par son ID](#récupérer-un-produit-par-son-id-)
-* [Endpoints Categories](#endpoints-categories-)
-  * [Ajouter une catégorie](#ajouter-une-catégorie-)
-  * [Récupérer toutes les catégories](#récupérer-toutes-les-catégories-)
-  * [Récupérer une catégorie par son ID](#récupérer-une-catégorie-par-son-id-)
-* [Format de données attendu](#format-de-données-attendu-)
-* [Gestion des erreurs](#gestion-des-erreurs-)
-  * [Ressource non trouvée](#ressource-non-trouvée-)
-  * [Conflit lors de l'ajout](#conflit-lors-de-lajout-)
-  * [Erreur de format de requête](#erreur-de-format-de-requête-)
+* [Endpoints Produits](#endpoints-produits)
+  * [Ajouter un produit](#ajouter-un-produit)
+  * [Récupérer tous les produits](#récupérer-tous-les-produits)
+  * [Récupérer un produit par son ID](#récupérer-un-produit-par-son-id)
+* [Endpoints Categories](#endpoints-categories)
+  * [Ajouter une catégorie](#ajouter-une-catégorie)
+  * [Récupérer toutes les catégories](#récupérer-toutes-les-catégories)
+  * [Récupérer une catégorie par son ID](#récupérer-une-catégorie-par-son-id)
+* [Format de données attendu](#format-de-données-attendu)
+* [Gestion des erreurs](#gestion-des-erreurs)
+  * [Ressource non trouvée](#ressource-non-trouvée)
+  * [Conflit lors de l'ajout](#conflit-lors-de-lajout)
+  * [Erreur de format de requête](#erreur-de-format-de-requête)
 ---
 
 
 ## Endpoints Produits
 ### Ajouter un produit
 **Méthode HTTP** : `POST`  
-**URL** : `http://localhost:9000/produit`
+**URL** : `http://localhost:9000/api/produit`
 
 **Description** : Cette méthode permet d'ajouter un nouveau produit dans la base de données.
 
-**Body (JSON)** :
+**Body (JSON)**
 ```json
 {
   "nom": "Pelle",
@@ -37,18 +37,18 @@
 ```
 ### Récupérer tous les produits
 **Méthode HTTP** : `GET`  
-**URL** : `http://localhost:9000/produits`
+**URL** : `http://localhost:9000/api/produits`
 
 **Description** : Cette méthode permet de récupérer tous les produits.
 ### Récupérer un produit par son ID
 **Méthode HTTP** : `GET`  
-**URL** : `http://localhost:9000/produit/{id}`
+**URL** : `http://localhost:9000/api/produit/{id}`
 
 **Description** : Cette méthode permet de récupérer un produit spécifique dans la base de données à partir de son ID.
 ## Endpoints Categories
 ### Ajouter une catégorie
 **Méthode HTTP** : `POST`  
-**URL** : `http://localhost:9000/categorie`
+**URL** : `http://localhost:9000/api/categorie`
 
 **Description** : Cette méthode permet d'ajouter une nouvelle catégorie dans la base de données.
 
@@ -60,12 +60,12 @@
 ```
 ### Récupérer toutes les catégories
 **Méthode HTTP** : `GET`  
-**URL** : `http://localhost:9000/categories`
+**URL** : `http://localhost:9000/api/categories`
 
 **Description** : Cette méthode permet de récupérer toutes les catégories.
 ### Récupérer une catégorie par son ID
 **Méthode HTTP** : `GET`  
-**URL** : `http://localhost:9000/categorie/{id}`
+**URL** : `http://localhost:9000/api/categorie/{id}`
 
 **Description** : Cette méthode permet de récupérer une catégorie spécifique dans la base de données à partir de son ID.
 
@@ -88,7 +88,7 @@
 
 ---
 
-## Gestion des erreurs 
+## Gestion des erreurs
 ### Ressource non trouvée
 **Cas de figure** : La ressource demandée dans la requête n'existe pas.
 

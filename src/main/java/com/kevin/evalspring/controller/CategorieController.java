@@ -13,19 +13,19 @@ public class CategorieController {
     @Autowired
     private CategorieService categorieService;
 
-    @GetMapping("/categories")
+    @GetMapping("/api/categories")
     @ResponseStatus(HttpStatus.OK)
     public Iterable<Categorie> getAllCategories() {
         return categorieService.findAll();
     }
 
-    @GetMapping("/categorie/{id}")
+    @GetMapping("/api/categorie/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Categorie getCategorie(@PathVariable int id) {
         return categorieService.findById(id);
     }
 
-    @PostMapping("/categorie")
+    @PostMapping("/api/categorie")
     @ResponseStatus(HttpStatus.CREATED)
     public Categorie addCategorie(@RequestBody @Valid Categorie categorie) {
         return categorieService.save(categorie);

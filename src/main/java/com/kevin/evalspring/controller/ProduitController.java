@@ -13,19 +13,19 @@ public class ProduitController {
     @Autowired
     private ProduitService produitService;
 
-    @GetMapping("/produits")
+    @GetMapping("/api/produits")
     @ResponseStatus(HttpStatus.OK)
     public Iterable<Produit> getAllProduits() {
         return produitService.findAll();
     }
 
-    @GetMapping("/produit/{id}")
+    @GetMapping("/api/produit/{id}")
     @ResponseStatus(HttpStatus.OK)
     public Produit getProduitById(@PathVariable int id) {
         return produitService.findById(id);
     }
 
-    @PostMapping("/produit")
+    @PostMapping("/api/produit")
     @ResponseStatus(HttpStatus.CREATED)
     public Produit addProduit(@RequestBody @Valid Produit produit) {
         return produitService.save(produit);
